@@ -14,6 +14,7 @@ vim.cmd("set cursorline")
 
 -- Set Tab to switch between tabs
 vim.cmd("nnoremap <Tab> :tabnext<CR>")
+vim.cmd("nnoremap <S-Tab> :bnext<CR>")
 -- Set C-s to open the diagnostic float window
 vim.api.nvim_set_keymap("n", "<C-s>", "<cmd>lua vim.diagnostic.open_float()<CR>", { noremap = true, silent = true })
 
